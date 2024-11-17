@@ -1,0 +1,382 @@
+/* src/components/ResultPage.css */
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #FBCB99;
+}
+
+.header {
+    background-image: url('../images/Raaaamrajs.png');
+    background-size: cover;
+    background-position: center;/* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    text-align: center;
+    padding: 10px;
+    border: 6px solid red;
+    border-radius: 20px;
+}
+
+.header h1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.date-time {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 12px;
+    color:#910901;
+}
+
+.sliding-text {
+    display: inline-block;
+    font-style: italic;
+    font-weight: bold;
+    animation: slideLeftRight 4s linear infinite;
+}
+
+@keyframes slideLeftRight {
+    0% {
+        transform: translateX(-70px);
+        /* Start slightly to the left */
+    }
+
+    50% {
+        transform: translateX(70px);
+        /* Move to the right */
+    }
+
+    100% {
+        transform: translateX(-70px);
+        /* Return to the left */
+    }
+}
+
+.golden-ank span {
+    margin-left: 50px;
+    /* Adjust spacing as needed */
+}
+
+.lucky-number {
+    margin-top: 10px;
+    padding: 5px;
+    background-color:#FBCB99;
+    border: 4.5px solid red;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.lucnumber {
+    border: 4px solid white;
+    border-radius: 25px;
+    background: #a80f9f;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.lucky-number .golden-ank {
+    font-size: 24px;
+    font-weight: 700;
+    color:#0922b6;
+    margin-top: 10px;
+}
+
+
+
+.second-purple {
+    /* padding: 5px; */
+    background-color:#FBCB99;
+    border: 4.5px solid red;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.purple {
+    border: 4px solid white;
+    border-radius: 25px;
+    background: #a80f9f;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+/* 
+.live-result h2 {
+    color: #9c27b0;
+} */
+
+.result-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-card {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.flex-container p {
+    font-size: 20px;
+    color: #333;
+    margin: 0 10px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.refresh-button {
+    background-color: #0922b6;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.chat-button {
+    background-color:#0922b6;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.refresh-button:hover,
+.chat-button:hover {
+    opacity: 0.8;
+}
+
+.result-card.morning{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.result-card.morning h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color:#0922b6;
+}
+
+.result-card.morning p {
+    font-weight: 600;
+    /* margin-bottom: 15px; */
+    font-size: 24px;
+    color:#910800;
+}
+
+.result-card.morning p2 {
+    font-size: 20px;
+    color:#0922b6;
+}
+
+.result-card.morning span {
+    margin-left: 25px;
+}
+
+
+
+.result-card.day {
+    background: #FDFD00; 
+}
+
+.result-card.day h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color:#0922b6;
+}
+
+.result-card.day p {
+    font-weight: 600;
+    /* margin-bottom: 15px; */
+    font-size: 24px;
+    color:#910800;
+}
+
+.result-card.day p2 {
+    font-size: 20px;
+    color:#0922b6;
+}
+
+.result-card.day span {
+    margin-left: 25px;
+}
+
+
+.result-card.night{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.result-card.night h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #0922b6;
+}
+
+.result-card.night p {
+    font-weight: 600;
+    /* margin-bottom: 15px; */
+    font-size: 24px;
+    color: #910800;
+}
+
+.result-card.night p2 {
+    font-size: 20px;
+    color:#0922b6;
+}
+
+.result-card.night span {
+    margin-left: 25px;
+}
+
+
+.last-purple {
+    padding: 5px;
+    background-color:#FBCB99;
+    border: 4.5px solid red;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.ll-purple {
+    border: 4px solid white;
+    border-radius: 25px;
+    background:#a80f9f;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.last-purple p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0922b6;
+}
+
+.last-purple button {
+    border-radius: 8px;
+    background-color: #0922b6;
+    color: white;
+    width: 20%;
+    height: 30px;
+}
+
+.back-disclaimer {
+    background-color: #FBCB99;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.back-disclaimer button {
+    margin: 5px;
+    border-radius: 8px;
+    padding: 10px;
+    background:#0922b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    background: #eeeeee;
+}
+
+.footer button {
+    margin: 5px;
+    padding: 10px;
+    background:#0922b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.last-disclaimer {
+    background-color:#0922b6;
+    border-radius: 25px;
+    color: white;
+}
+
+
+.last-disclaimer p {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.last-disclaimer h3 {
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.sheet-container {
+    /* width: 100%;
+    height: 100vh; */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto;   /* Enable vertical scrolling only */
+}
+
+
+
+.footer a.whatsapp-link i {
+    color: #25D366; /* WhatsApp green color */
+    font-size: 1.5rem; /* Adjust icon size */
+    margin-right: 8px;
+}
+
+.footer a.telegram-link i {
+    color: #0088cc; /* Telegram blue color */
+    font-size: 1.5rem; /* Adjust icon size */
+    margin-left: 12px; /* Space between number and icon */
+    vertical-align: middle;
+}
